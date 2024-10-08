@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>J_Ming 블로그</title>
+    
+    <!--초기화-->
+    <style>
+        * {
+            margin:0 ; padding: 0;
+            font-family : '굴림'
+        }
+
+        a {text-decoration: none;}
+
+        li{list-style-type: none;}
+    </style>
+
+    <!-- 기본 클래스-->
+    <style>
+        body{
+            text-align: left;
+            color: black;
+            background-color: gainsboro;
+            box-shadow: ghostwhite;
+            width: 1460px; margin: 0 auto;
+            overflow:scroll;
+        }
+
+        div#wrapper{
+            text-align: left;
+            min-height: 300px;
+            margin: 20px 0;
+            padding: 10px 20px;
+        }
+
+        header, footer, nav, aside, section{
+            border:1px #999;
+            margin:5px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            padding: 10px;
+            box-shadow: honeydew;
+        }
+
+        nav, section, aside{
+            float: left;
+            height: 1500px;
+            background-color: white;
+            border-radius: 10px;
+        }
+    
+        nav{
+            width:237px;
+        }
+
+        section{
+            width:780px;
+        }
+        
+        article{
+            width: 90%;
+            margin: 20px;  
+        }
+
+        aside{
+            width:300px;
+        }
+
+        footer{
+            height: 100px;
+            background-color: gold;
+            position: relative;
+            clear: both;
+            border-radius: 10px;
+        }       
+    </style>
+
+    <!-- 헤더 -->
+    <style>
+        header {
+            padding: 40px 50px;
+            height: 200px;
+            background-color: gold;
+            border-radius: 10px;
+        }
+
+        .master-title{
+            font-family: '여기어때잘난서체';
+            font-size: 80px;
+            color: black;
+        }
+        
+        .master-description{ 
+            font-family: '여기어때잘난서체';
+            text-align: right;
+            font-size: 30px;
+            font-weight: 500;
+            color:goldenrod;
+        }
+    </style>
+
+    <!-- 네비게이션-->
+    <style>
+        .main-navigation{
+            padding:10px;
+        }
+
+        .main-navigation>h3{
+            font-size:30px;
+            text-align: center;
+            font-family: '레시피코리아 Medium';
+        }
+
+        .inner-menu{
+            font-size:25px;
+            padding: 0 15px;
+            font-family: '배달의민족 도현';
+        }
+
+        .main-navigation li a{
+            margin-left: 8px;
+            padding: 0 40px;
+            font-size: 20px;
+            color:black;
+        }
+
+    </style>
+
+    <!-- 본문(검색)-->
+    <style>
+        .search-bar{
+            margin: 20px;
+        }
+
+        .input-search{
+            width: 620px;
+            padding:5px 0;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .input-search-submit{
+            padding: 5px 30px;
+            background-color: #F2AB39;
+            border-radius: 5px;
+        }
+    </style>
+
+    <!-- 본문(기사)-->
+    <style>
+        .article-body{
+            padding: 10px 10px;
+        }
+        .article-title{
+            font-size: 30px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            font-family: 'G마켓 산스 TTF Medium';
+        }
+
+        .article-subtitle{
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .article-main{
+            width: 700px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    </style>
+
+    <!-- 본문(어사이드)-->
+    <style>
+        .main-aside{
+            text-align: center;
+        }
+
+        .main-aside>h3{
+            font-size: 30px;
+            text-align: center;
+            font-family: '레시피코리아 Medium';
+        }
+
+        .aside-menu-item{
+            font-size: 25px;
+            margin: 15px;
+        }
+    </style>
+    
+    <!-- 푸터 -->
+    <style>
+        #main-footer{
+            font-size: 20px;
+            text-align: center;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <div id = "wrapper">
+        <!--헤더 시작-->
+        <header>
+            <hrgoup>
+                <h1 class = "master-title" >J_Ming 블로그</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class = "master-description">Music & Computer</h2>
+            </hrgoup>
+        </header>
+
+        <!--네비게이션-->
+        <nav class="main-navigation">
+            <h3>Category</h3>
+            <hr>
+            <br>
+            <p class ="inner-menu">Project</p>
+            <ul>
+                <li><a href="#">Python</a>
+                <li><a href="#">Java</a>
+                <li><a href="#">C</a>
+            </ul>
+            <br>
+            <p class ="inner-menu">Music</p>
+            <ul>
+                <li><a href="#">계절별</a>
+                <li><a href="#">분위기별</a>
+                <li><a href="#">댄스</a>
+                <li><a href="#">발라드</a>
+            </ul>
+            <br>
+            <p class ="inner-menu">Recently</p>
+            <ul>
+                <li><a href="#">데이터</a>
+                <li><a href="#">데이터</a>
+                <li><a href="#">데이터</a>
+            </ul>
+            
+        </nav>
+
+        <!--컨텐츠 부분-->
+        <section>
+            <div class="search-bar">
+                <form>
+                    <input type="text" class="input-search" placeholder="검색어를 입력하세요">
+                    <input type="submit" class="input-search-submit" value="검색">
+                </form>
+            <br>
+            </div>
+            <article>
+                <div class="article-header">
+                    <h1 class= "article-title">12월 노래추천</h1>
+                    <p class= "article-subtitle">계절별 - 12월</p>
+                </div>
+                <div class="article-body">
+                    <img src="tree.jpg" width="700" height="380">
+                    <br>
+                    <p class="article-main">벌써 2021년의 마지막 달입니다. 크리스마스도 2주밖에 남지 않았네요.
+                        추천해드리는 K-캐롤 들으시면서 올해 마무리 잘하시고 내년에도 행복하시기를 바라요 :)<br>
+                        종소리 - 러블리즈, Snow Prince - SS501, 하얀고백 - 인피니트, 겨울동화 - 라붐,<br>
+                        미리메리크리스마스 - 아이유, 크리스마스라서 - 비투비, Merry&Happy - 트와이스, </br>
+                        Christmassy! - 더보이즈, 올해 제일 잘한 일 - 트와이스, 울어도 돼 - 비투비, </br>
+                        울면 안 돼 - 비투비, 12월의 기적 - EXO
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </article>
+
+
+            <article>
+                <div class="article-header">
+                    <h1 class= "article-title">자바 프로젝트</h1>
+                    <p class= "article-subtitle">쇼핑 예약 프로그램</p>
+                </div>
+                <div class="article-body">
+                    <img src ="java.png" width="700" height="380">
+                    <br>
+                    <p class="article-main">&nbsp해당 프로젝트는 2021년 12월에 진행한 프로젝트로 자영업자가 운영하는 가게는 
+                        영업시간이 일정하지 않아서 개발하게 된 방문시간을 예약하는 프로그램입니다. <br>
+                        해당 프로그램의 주요기능으로는 회원가입과 로그인, 방문시간 예약, 상품예약, 공지사항 등이 있습니다.
+                        방문시간이 체크박스 형태로 나열되어 있어 원하는 방문시간을 체크하면 예약이 되는 형태입니다.
+                        또한 해당 매장의 상품과 가격이 입력되어 있고, 체크박스를 클릭하면 원하는 상품을 예약할 수 있는 기능도 있습니다.    
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </article>
+        </section>
+
+        <!--사이드바-->
+        <aside class="main-aside">
+            <audio autoplay controls>
+                <source src = "Jingle Bells.mp3" type="audio/mp3">
+            </audio>
+            <br>
+            <br>
+            <br>
+            <h3>Profile</h3>
+            <hr>
+            <br>
+            <p class = "aside-menu-item">J_Ming Blog</p>
+            <p class = "aside-menu-item">C,JAVA,Python</p>
+            <p class = "aside-menu-item">HTML5, CSS3</p>
+            <p class = "aside-menu-item">MySql</p>
+        </aside>
+
+        <!--푸터-->
+        <footer id = "main-footer">
+            <br>
+            <a href="#"> Created by 컴퓨터공학과, 2학년, 1반, 20200837, 박종민</a>
+        </footer>
+    </div>
+</body>
+</html>
